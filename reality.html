@@ -13,87 +13,91 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
     <link rel="icon" href="images/nelson.icon" />
     <title>Reality Check!</title>
-    
+    <style>
+      .correct { border: 30px solid green; }
+      .wrong { border: 30px solid red; }
+    </style>
   </head>
   <body>
     <h1 class="text-center">Reality Check!</h1>
     <h2 class="text-center">Are you a victim of the Mandela effect?</h2>
 
-      <div class="container" style="width: max-content;">
+      <div class="container" style="width: max-content">
 
         <div class="card" style="text-align: center; width: fit-content; margin: auto;">
           <div class="card-header">What color is Pikachu's tail?</div>
-          <div id="options">
-            <button style="width: fit-content;" id="submit" style="transition: 2s ease-out;">
+          <div style="width: fit-content" id="options">
+            <button id="correct" style="transition: 2s ease-out">
               <img src="images/yellow-tail.webp" alt="Yellow Tail">
             </button>
-            <button id="submit">
+            <button id="wrong">
               <img src="images/black-tail.webp" alt="Black Tail">
             </button>
           </div>
-          <div class="card-footer">
+          <div class="card-footer" id="answer1">
             <img src="images/yellow-tail.webp" alt="answer" width="375" height="300">
           </div>
         </div>
 
-        <div class="card" style="text-align: center; width: fit-content; margin: auto;">
+        <div class="card" style="text-align: center; width: fit-content; margin: auto">
           <div class="card-header">Which is the correct spelling of this meat brand?</div>
-          <div id="options">
-            <button style="width: fit-content;" id="submit">
+          <div style="width: fit-content" id="options">
+            <button  id="wrong">
               <img src="images/meyer.webp" alt="Oscar Meyer">
             </button>
-            <button id="submit">
+            <button id="correct">
               <img src="images/mayer.webp" alt="Oscar Mayer">
             </button>
           </div>
-          <div class="card-footer">
+          <div class="card-footer" id="answer2">
             <img src="images/oscar-2.jpg" alt="answer" width="375" height="300">
           </div>
         </div>
 
         <div class="card" style="text-align: center; width: fit-content; margin: auto;">
           <div class="card-header">Does Stanley from The Office have a mustache?</div>
-          <div id="options">
-            <button id="submit">
+          <div style="width: fit-content" id="options">
+            <button id="correct">
               <img src="images/stanley-1.jpg" alt="with mustache">
             </button>
-            <button id="submit">
+            <button id="wrong">
               <img src="images/stanley-2.jpg" alt="no mustache">
             </button>
           </div>
-          <div class="card-footer">
+          <div class="card-footer" id="answer3">
             <img src="images/stanley-answer.jpg" alt="stanley-answer">
           </div>
         </div>
 
         <div class="card" style="text-align: center; width: fit-content; margin: auto;">
           <div class="card-header">Which one is the true Target logo?</div>
-          <div id="options">
-            <button style="width: fit-content;" id="submit">
+          <div style="width: fit-content" id="options">
+            <button id="wrong">
               <img src="images/target_wrong.webp" alt="Option 1">
             </button>
-            <button id="submit">
+            <button id="correct">
               <img src="images/target_true.webp" alt="Option 2">
             </button>
           </div>
-          <div class="card-footer">
+          <div class="card-footer" id="answer4">
             <img src="images/target_true.webp">
           </div>
         </div>
 
         <div class="card" style="text-align: center; width: fit-content; margin: auto;">
           <div class="card-header">What did Gandalf really say in this iconic movie line?</div>
-          <div id="options">
-            <button style="width: fit-content;" id="submit">
+          <div style="width: fit-content" id="options">
+            <button  id="wrong">
               <img src="images/Gandalf-1.jpg" alt="Option 1" width="375" height="300">
             </button>
-            <button id="submit">
+            <button id="correct">
               <img src="images/Gandalf-2.jpg" alt="Option 2" width="375" height="300">
             </button>
           </div>
-          <div class="card-footer">
+          <div class="card-footer" id="answer5">
             <img src="images/fly.gif" alt="answer">
           </div>
         </div>
