@@ -5,8 +5,14 @@ $(document).ready(function() {
 
     // Function to update the score display
     function updateScoreDisplay() {
-        // Assuming there's an element with id 'score' to display the score
-        $('#score').text("Score: " + score);
+        // Check if the score is 5 (assuming there are 5 questions)
+        if (score === 5) {
+            // Update the text to congratulate the user
+            $('#score').text("Congratulations, you got them all right!");
+        } else {
+            // Otherwise, display the current score
+            $('#score').text("Score: " + score);
+        }
     }
 
     // Hide all elements with the class 'card-footer' initially
