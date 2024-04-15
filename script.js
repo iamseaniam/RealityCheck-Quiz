@@ -2,21 +2,33 @@
 $(document).ready(function() {
     // Initialize the score
     let score = 0;
+    let totalQuestions = 5;
+    let answeredQuestions = 0;
     $("#startQuiz").click(function () {
-        $("#quizContent").removeClass("d-none");
+        $("#quizContent").removeClass("d-none")
+        $(this).hide();
     })
     // Function to update the score display
     function updateScoreDisplay() {
-        // Check if the score is 5 (assuming there are 5 questions)
-        if (score === 5) {
-            // Update the text to congratulate the user
-            $('#score').text("Congratulations, you got them all right!");
-        } else {
-            // Otherwise, display the current score
-            $('#score').text("Score: " + score);
+        answeredQuestions++;
+        if (answeredQuestions === totalQuestions) {
+            let message = "";
+            if (score === totalQuestions) {
+                message = "Congratulations, you got them all right!";
+            } else if (score === totalQuestions - 1) {
+                message = "SO CLOSE! Score: " + score;
+            } else if (score === totalQuestions - 2) {
+                message = "Decent! Score: " + score;
+            } else if (score === totalQuestions - 3) {
+                message = "Better luck next time! Score: " + score;
+            } else if (score === totalQuestions - 4) {
+                message = "Oof. Score: " + score;
+            } else {
+                message = "Womp Womp. Score: " + score;
+            }
+            $('#score').text(message);
         }
     }
-
     // Hide all elements with the class 'card-footer' initially
     $('.card-footer').hide();
 
