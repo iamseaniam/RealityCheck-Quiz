@@ -2,7 +2,9 @@
 $(document).ready(function() {
     // Initialize the score
     let score = 0;
-
+    $("#startQuiz").click(function () {
+        $("#quizContent").removeClass("d-none");
+    })
     // Function to update the score display
     function updateScoreDisplay() {
         // Check if the score is 5 (assuming there are 5 questions)
