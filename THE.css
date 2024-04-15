@@ -1,3 +1,7 @@
+body {
+    background-color: #FAFAFA;
+}
+
 .correct { 
     border: 10px solid #00FF00;
     border-radius: 10px;
@@ -9,6 +13,10 @@
 }
 
 #score {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%; 
     font-size: 24px;
     font-weight: bold;
     color: #007BFF;
