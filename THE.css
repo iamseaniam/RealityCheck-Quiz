@@ -49,7 +49,7 @@ html, body {
     bottom: 0;
     left: 0;
     width: 100%; 
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     color: #007BFF;
     text-align: center;
@@ -57,5 +57,5 @@ html, body {
     padding: 10px;
     border: 2px solid #007BFF;
     border-radius: 5px;
-    background-color: #F8F9FA;
+    background-color: rgba(248, 249, 250, 0.9); /* change the last varible to mess with opacity */
 }
