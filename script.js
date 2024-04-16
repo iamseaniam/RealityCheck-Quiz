@@ -2,6 +2,7 @@
 $(document).ready(function() {
     // Initialize the score
     let score = 0;
+<<<<<<< HEAD
 
     // Function to update the score display
     function updateScoreDisplay() {
@@ -15,6 +16,30 @@ $(document).ready(function() {
         }
     }
 
+=======
+    let quizStarted = false; // Flag to check if the quiz has started
+
+    $("#startQuiz").click(function () {
+        $("#quizContent").removeClass("d-none");
+        $(this).hide();
+    });
+    // Function to update the score display
+    function updateScoreDisplay() {
+        let message = "";
+        if (score === 5) {
+            message = "Congratulations, you got them all right!";
+        } else if (score === 4) {
+            message = "Nice! Score: " + score;
+        } else if (score === 3) {
+            message = "Decent! Score: " + score;
+        } else if (score === 2) {
+            message = "Gettin' there.. Score: " + score;
+        } else {
+            message = "Score: " + score;
+        }
+        $('#score').text(message);
+    }
+>>>>>>> b120ce08ed44a36d3894c4277ee58d4abb4bd994
     // Hide all elements with the class 'card-footer' initially
     $('.card-footer').hide();
 
@@ -40,5 +65,13 @@ $(document).ready(function() {
 
         // Update the score display
         updateScoreDisplay();
+<<<<<<< HEAD
+=======
+
+        if (!quizStarted) {
+            $("#score").removeClass("d-none");
+            quizStarted = true; // Set the flag to true to indicate the quiz has started
+        }
+>>>>>>> b120ce08ed44a36d3894c4277ee58d4abb4bd994
     });
 });
