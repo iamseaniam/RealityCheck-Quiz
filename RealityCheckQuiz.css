@@ -27,10 +27,10 @@ html, body {
 }
 
 #startQuiz {
-    font-size: 56px;
-    width: 500px;
+    font-size: 42px;
+    width: 350px;
     margin: auto;
-    margin-top: 30vh;
+    margin-top: 10vh;
     transform: translateY(-50%);
 }
 
