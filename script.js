@@ -2,10 +2,12 @@
 $(document).ready(function() {
     // Initialize the score
     let score = 0;
+    let quizStarted = false; // Flag to check if the quiz has started
+
     $("#startQuiz").click(function () {
-        $("#quizContent").removeClass("d-none")
+        $("#quizContent").removeClass("d-none");
         $(this).hide();
-    })
+    });
     // Function to update the score display
     function updateScoreDisplay() {
         let message = "";
@@ -47,5 +49,10 @@ $(document).ready(function() {
 
         // Update the score display
         updateScoreDisplay();
+
+        if (!quizStarted) {
+            $("#score").removeClass("d-none");
+            quizStarted = true; // Set the flag to true to indicate the quiz has started
+        }
     });
 });

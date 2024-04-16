@@ -1,10 +1,10 @@
 html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
+        height: 100%;
+        margin: 0;
+        padding: 0;
+}
 
-  .gradient-background {
+.gradient-background {
     position: fixed;
     top: 0;
     left: 0;
@@ -12,27 +12,27 @@ html, body {
     height: 100%;
     background: linear-gradient(to bottom, #ffffff, #87cefa);
     z-index: 1;
-  }
+}
 
-  .content-container {
+.content-container {
     position: relative;
     z-index: 1;
-  }
+}
 
-  .title-text {
+.title-text {
     color: #2d545e;
     text-shadow: 2px 2px 4px rgba(18, 52, 59, 0.5);
     font-size: 2.5em;
     margin: 20px;
-  }
+}
 
-  #startQuiz {
+#startQuiz {
     font-size: 56px;
     width: 500px;
     margin: auto;
     margin-top: 30vh;
     transform: translateY(-50%);
-  }
+}
 
 .correct { 
     border: 10px solid #00FF00;
@@ -49,7 +49,7 @@ html, body {
     bottom: 0;
     left: 0;
     width: 100%; 
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
     color: #007BFF;
     text-align: center;
@@ -57,5 +57,9 @@ html, body {
     padding: 10px;
     border: 2px solid #007BFF;
     border-radius: 5px;
-    background-color: rgba(248, 249, 250, 0.9); /* change the last varible to mess with opacity */
+    background-color: rgba(248, 249, 250, 0.8); /* change the last varible to mess with opacity */
+}
+
+.d-none {
+    display: none;
 }
