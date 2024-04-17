@@ -86,9 +86,22 @@ html, body {
     height: auto;
     transition: .5s ease;
     backface-visibility: hidden;
-  }
-  
+}
+
+.muhaha {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    color: #007BFF;
+}
+
+.muhaha:hover {
+    opacity: 0.3;
+}
+
 .image:hover {
     opacity: 0.3;
-  }
-  
+}
