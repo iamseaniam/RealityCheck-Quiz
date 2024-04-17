@@ -1,7 +1,7 @@
 <h1>Reality Check:</h1>
 A quiz on different instances of the infamous Mandela effect. Can you be fooled by the Mandela effect? Or are you in touch with reality?
 
-For our project, we created a quiz which tests the user's knowledge on 5 Mandela effects utilizing HTML, Bootstrap, CSS, JavaScript, and JQuery. The webpage will prompt the user to start the quiz, then complete the quiz by clicking the images that they think are the correct answers. Our script tracks their score along the way and gives a final score at the end.
+For our project, we created a quiz which tests the user's knowledge on 5 Mandela effects. We utilize HTML, Bootstrap, CSS, JavaScript, and JQuery. The webpage prompts the user to start the quiz, then complete the quiz by clicking the images that they think correspond with the correct answers. Our script tracks their score along the way and gives a final score at the end.
 
 <b>Instructions for use:</b>
 1. Open link: http://cnidesigns.com/Atlas/reality.html
